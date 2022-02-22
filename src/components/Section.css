@@ -1,5 +1,5 @@
 .h2 {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .wrapper {
@@ -11,4 +11,6 @@
 
 .innerWrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
