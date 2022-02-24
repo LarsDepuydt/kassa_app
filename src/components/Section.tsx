@@ -4,23 +4,28 @@ import Item from "./Item"
 type ItemData = {
   title: string,
   img: string,
-  prijs: number,
+  price: number,
+  id: number,
+  
 }
 
 interface Props {
-  sectionTitle: string
-  data: ItemData[]
-  onItemClicked: (newNumber: number, sectionNumber: number) => void,
+  sectionTitle: string,
+  data: ItemData[],
+  clear: boolean,
+  onItemClicked: (id: number, newNumber: number) => void,
 }
 
-const section: React.FC<Props> = ({ sectionTitle, data, onItemClicked }) => {
+const section: React.FC<Props> = ({ sectionTitle, data, clear, onItemClicked }) => {
   const items = data.map(item => (
     <Item
       key={data.indexOf(item)}
       title={item.title}
       img={item.img}
-      prijs={item.prijs}
-      onItemClicked={(newNumber: number) => onItemClicked(newNumber, data.indexOf(item))} />
+      price={item.price}
+      id={item.id}
+      clear={clear}
+      onItemClicked={onItemClicked} />
   ))
 
   return (

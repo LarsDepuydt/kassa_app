@@ -1,16 +1,18 @@
 .h2 {
   font-size: 30px;
+  margin-top: 0;
 }
 
 .wrapper {
   margin-bottom: 50px; 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: center; */
 }
 
 .innerWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }

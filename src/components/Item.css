@@ -4,29 +4,40 @@
   border-width: 1px;
   margin: 5px;
   padding: 15px;
-  width: 200px;
-  height: 170px;
+  max-width: 200px;
+  min-width: 170px;
   box-shadow: 0 1px 1px;
+  background-color: white;
 }
 
 .buttonDiv {
-  flex: 1;
-  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
+  margin-top: 5px;
+  margin-bottom: 7px;
 }
 
 input {
-  width: 50%;
+  width: 30%;
+  padding-left: 10px;
+  height: 25px;
+  font-size: 20px;
+}
+
+input[type=number] {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
 }
 
 p {
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
-.buttonMin {
-  background-color: 'red'
+/* .buttonMin {
+  background-color: red;
 }
 
 .buttonPlus {
-  background-color: 'green'
-}
+  background-color: green;
+} */
